@@ -88,6 +88,7 @@
     }
 
     .nav-links a:hover { color: var(--accent); }
+    .nav-links a.active { color: var(--accent); }
 
     /* ─── Main layout ─── */
     main {
@@ -567,14 +568,14 @@
 
   <!-- ─── Navigation ─── -->
   <nav>
-    <a class="nav-logo" href="#">
+    <a class="nav-logo" href="/">
       <span class="nav-pulse"></span>
       PORT_SCAN
     </a>
     <ul class="nav-links">
-      <li><a href="#">Docs</a></li>
-      <li><a href="#">GitHub</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="/docs">Docs</a></li>
+      <li><a href="/github">GitHub</a></li>
+      <li><a href="/about">About</a></li>
     </ul>
   </nav>
 
@@ -719,9 +720,10 @@
   <footer>
     <span class="footer-left">Built with Flask &amp; Python</span>
     <ul class="footer-links">
-      <li><a href="#">MIT License</a></li>
-      <li><a href="#">Source Code</a></li>
-      <li><a href="#">Report Bug</a></li>
+      <li><a href="/license">MIT License</a></li>
+      <li><a href="/source">Source Code</a></li>
+      <!-- Replace with your repo's issues URL -->
+      <li><a href="https://github.com/YOUR_USERNAME/YOUR_REPO/issues" target="_blank" rel="noopener">Report Bug</a></li>
     </ul>
   </footer>
 
